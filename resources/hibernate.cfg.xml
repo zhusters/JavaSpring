@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <!--         location db-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/my_db?useSSL=false&amp;serverTimezone=UTC</property>
+        <!--драйвер для проекта-->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <!--        sql user name-->
+        <property name="connection.username">root</property>
+        <!--sql password-->
+        <property name="connection.password">Qwertyasdfghzxc0</property>
+        <!--session for connection with db-->
+        <property name="current_session_context_class">thread</property>
+        <!--        syntax-->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!--configuration which allow us see sql expressions -->
+        <property name="show_sql">true</property>
+
+    </session-factory>
+</hibernate-configuration>
